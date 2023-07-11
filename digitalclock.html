@@ -1,0 +1,83 @@
+<html>
+  <head>
+   <style>
+    body{
+      overflow:hidden;
+      background-color:
+    }
+    .container{
+    width:95%;
+    height:100vh;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     }
+   .clock
+    {
+   
+   width:fit-content;
+   margin:auto;
+   padding:10px;
+   border-radius:5px;
+   background-color:#fffaa0;
+  
+}
+ .clock h1{
+  display:inline-block;
+  margin:0 10px;
+  font-weigth:bold;
+  font-size:5rem;
+ }
+ @media(max-width:750px){
+ 
+ #bar1,#bar2{ display:none;}
+ .clock{
+    text-align:center;
+     width:100%;
+    }
+ .clock h1{
+    display:block;
+}
+}
+@media(max-width:450px){
+ .clock h1{
+ font-size:4rem;
+ }
+ }
+   
+   </style>
+  </head>
+  <script>
+    window.addEventListener('load',calculateTime);
+   function calculateTime(){
+    var date= new Date();
+    var daynumbers=date.getDay();
+    var hour=date.getHours();
+    var minute =date.getMinutes();
+    var ampm=hour >= 12 ?'PM':'AM';
+    var dayNames=["SUN","MON","TUE","WED","THUR","FRI","SAT"];
+    hour=hour%12;
+    hour= hour ? hour:'12';
+    hour=hour<10 ? '0'+hour:hour;
+    minute=minute < 10 ? '0'+minute:minute;
+  document.getElementById("day").innerHTML=dayNames[daynumbers];
+  document.getElementById("hour").innerHTML=hour;
+  document.getElementById("minute").innerHTML=minute;
+  document.getElementById("ampm").innerHTML=ampm;
+ 
+  setTimeout(calculateTime,200);
+}
+  </script>
+  
+ <body>
+ <div class="container">
+     <div class="clock">
+       <h1 id="day">MON</h1>
+       <h1 id="hour">04</h1>
+       <h1 id="bar1">|</h1>
+       <h1 id="minute">20</h1>
+       <h1 id="bar2">|</h1>
+       <h1 id="ampm">PM</h1>
+ </body>
+ </html>
