@@ -1,0 +1,97 @@
+<html>
+ <head>
+
+ <style>
+
+ body{
+
+  background:;
+
+  }
+  .container{
+     
+       width:90%;
+       height:90vh;
+       display:flex;
+      padding:0 50px;
+}
+     .child{
+     
+     width:900px;
+     height:450px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   color:#fffff;
+   background-color:#9d94d2;
+   border-radius:20px;
+   
+   }
+  .child p{
+     font-size:1.5rem
+   }
+ @media(max-width:440px){
+  .child p, .child h1{
+     font-size:1rem
+   }
+}
+.btn{
+   font-size:1rem;
+   padding:5px;
+   background-color:#9d94d2;
+   color:#fffff;
+   
+
+ }
+  .btn:hover{
+   background-color:#3b28a4;
+  color:white;
+
+}    
+ </style>
+ </head>
+  <script>
+    
+         var arr=["The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela",
+             "The way to get started is to quit talking and begin doing. -Walt Disney",
+             "Attitude is the little things that makes a big difference.",
+             "Be Thankfull to God.",
+              "Foucus on the steps in front of you,not the whole staircase.",   
+              "Eyes full of stories and heart full of memories.",
+              "Trust your uniqueness.",         
+              "Everyone's journey is different.",
+               "Be reason for someone's smile.",
+                "The purpose of our lives is to be happy. -Dalai Lama"
+         ];
+    function generator(){
+        
+        var randomnumber=Math.floor(Math.random()*(arr.length));
+         document.getElementById("quotes").innerHTML=arr[randomnumber]; 
+           console.log("work succesfully");
+     }
+  </script>
+
+  <body>
+     
+     <div class="container">  
+      <div class="child">
+           <h1>Todays Thought</h1>
+          <p id="quotes" style="margin:10px; color:white;"></p>
+      </div>
+     </div>
+      <div style="text-align:center">
+      <button onclick="generator()" class="btn btn-info">click here!</button>
+     </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
