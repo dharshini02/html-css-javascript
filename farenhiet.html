@@ -1,0 +1,51 @@
+<html>
+ <head>
+   <style>
+    h1{
+      color:#E3ecf0;
+       
+     }
+     body{
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          
+          
+     }
+    div{ text-align:center;
+         background-color:#013851;
+          width:60%;
+          height:60%;
+          margin:10%;
+         border-radius:10px;
+    }
+    input {
+      padding:10px;
+      border-radius:5px;
+    }
+     button{
+        padding:10px;
+      }
+     
+     p{
+      color:#E3ecf0;
+          }
+   </style>
+ </head>
+
+ <body>
+<script src="converter.js">
+</script>
+ <div>
+   <h1>Farenheit to celcius converter</h1>
+   
+   <input type="text" id="farenhietto" /> 
+   <button id="clk"onclick=convert()>click here!</button>
+   <p id="result"></p>
+   <h1>Celcius to Farenheit converter</h1>
+    <input type="text" id="celciusto" />
+   <button id="clk1" onclick=celciusconvert()>click here!</button>
+    <p id="ans"></p>
+  </div>
+ </body>
+</html>
