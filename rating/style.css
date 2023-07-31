@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  width:100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(216, 12%, 8%);
+    margin:1.5rem;
+    padding: 10px;
+    font-family:Outfit, sans-serif;
+}
+p{
+    color: hsl(217, 12%, 63%);
+    padding: 0.5rem;
+    font-size: 15px;
+    line-height: 1.8;
+    
+}
+.container,.result{
+    
+     max-width: 25em;
+    border-radius: 0.62rem;
+    background-color: hsl(213, 19%, 18%);
+    color:hsl(0, 0%, 100%);
+    padding: 20px;
+    margin:1.5rem;
+   
+}
+
+
+.btn{
+   padding-top: 0.5rem;
+   margin: 10px;
+   height: 3rem;
+   width:3rem;
+   border: none;
+   border-radius: 50em;
+   cursor: pointer;
+  background-color:hsl(213,17%,20%) ;
+  color:  #fff;
+  font-size: 1.5em;
+
+  transition: 0.3s;
+} 
+button:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+button:focus{
+  background-color: hsl(217, 12%, 63%);
+}
+  .submit:hover{
+    color:hsl(25, 97%, 53%);
+    background-color: white;
+  } 
+ 
+.submit{
+    padding:0.5rem;
+    border-radius: 10em;
+    width:100%;
+    background-color: hsl(25, 97%, 53%);
+    color:white;
+    font-size: 1.0em;   
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+   
+}
+.result{
+    display: none;
+    
+}
+ .pp{
+  text-align: center;
+  background-color: hsl(213,17%,20%);
+  color:hsl(25, 97%, 53%);
+  border-radius: 15em;
+
+}
+.score{
+  text-align: center;
+  
+}
+#thanku{
+  padding: 0.5rem;
+}
+.img{
+  text-align: center;
+}
+.star{
+    background-color: hsl(213, 16%, 22%);
+    border-radius:50%;
+    width:10px;
+   padding: 1.0em;
+    display: grid;
+    place-content: center;
+   
+}
+@media(max-width:400px){
+  .body{
+    width:100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(216, 12%, 8%);
+    margin:1.5rem;
+    padding: 10px;
+  }
+  .container,.result{
+    width:20em;
+  }
+  
+}
+
+
